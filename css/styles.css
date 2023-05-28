@@ -372,13 +372,16 @@ width: calc((100% - 48px) / 3);
     color: var(--customer-icons-color);
 }
 
-.customers-link:hover {
+.customers-link:hover, .customers-link:focus {
     border-color: var(--link-color-hover) ;
 }
 .customers-link:hover .customers-icon {
     fill: #404BBF;
 }
 
+.customers-link:focus .customers-icon {
+    fill: #404BBF;
+}
 .customers-icon {
   
     fill: currentColor;
@@ -432,6 +435,7 @@ width: calc((100% - 48px) / 3);
         line-height: 1.5;      
         letter-spacing: 0.02em;    
         color: var(--background-color-one);
+        margin-bottom: 16px;
 }
 
 .footer-soc-list {
